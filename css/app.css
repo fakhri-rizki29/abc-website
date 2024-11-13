@@ -9,6 +9,7 @@ body {
 
 .header {
   /* border: 1px solid red; */
+  background-color: white;
   position: sticky;
   z-index: 10;
   top: 0;
@@ -85,6 +86,7 @@ body {
   text-transform: capitalize;
 }
 .right-b {
+  /* border: 1px solid blue; */
   font-size: 1.5rem;
   padding: 1.5rem;
   text-decoration: none;
@@ -94,15 +96,16 @@ body {
 }
 
 .second-nav {
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid rgb(211, 209, 209);
+  border-bottom: 1px solid rgb(211, 209, 209) ;
   height: 100%;
   width: 100%;
   position: sticky;
-  top: 60px;
+  top: 67px;
   z-index: 9;
+  background-color: white;
 }
-ul {
+.second-nav-ul{
   /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
@@ -114,11 +117,72 @@ ul {
   padding: 1rem;
 }
 .second-nav-a {
+  /* border: 1px solid blue; */
   text-decoration: none;
   text-transform: capitalize;
   color: black;
   font-weight: 600;
+  position: relative;
 }
+.second-nav-a::after{
+ content: '';
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ width: 0;
+ height: 4px;
+ transition: 0.3ms ease-in-out;
+}
+.second-nav-a:active::after{
+  width: 100%;
+  background-color: black;
+}
+.second-nav-a:hover{
+  background-color: rgb(215, 213, 213);
+  padding: 1rem;
+  transition: 0.3ms ease-in-out;
+}
+
+.second-nav-toggle{
+  border: 1px solid rgb(173, 168, 168);
+  background-color: white;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  z-index: 15;
+  padding: 1.5rem;
+  display: none ;
+  overflow-y: scroll;
+}
+.search-bar{
+  border: 1px solid black;
+  width: 100%;
+}
+input{
+  /* border: 1px solid blue; */
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.ul-toogle-nav{
+  list-style-type: none;
+}
+.li-toggle-nav{
+  margin: 2rem 0;
+  border-bottom: 1px solid rgb(194, 186, 186);
+}
+.second-nav-toggle-a{
+  text-decoration: none;
+  border-width: 100%;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
 .hero-section {
   /* border: 1px solid red; */
   margin: 3rem auto;
@@ -191,6 +255,9 @@ ul {
   padding: 0.5rem;
 }
 .p-middle-card {
+  /* border: 1px solid blue; */
+  width: 70%;
+  margin: auto;
   font-size: 1rem;
   font-weight: 500;
   font-family: "poppins";
@@ -198,7 +265,9 @@ ul {
 }
 .ul-card {
   /* border: 1px solid blue; */
+  width: 70%;
   margin: 0.5rem auto;
+  list-style-type: none;
 }
 .li-card {
   /* border: 1px solid red; */
@@ -577,6 +646,9 @@ select:hover {
     font-weight: 500;
     font-size: 0.8rem;
   }
+  .second-nav-toggle{
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 835px) {
@@ -644,8 +716,14 @@ select:hover {
     font-size: 1rem;
     border: 2px solid black;
   }
+  .second-nav-toggle{
+    width: 40%;
+  }
 }
 @media screen and (max-width: 780px) {
+  .second-nav-toggle{
+   top: 5rem;
+  }
   .ri-menu-line {
     font-size: 1.5em;
   }
@@ -811,5 +889,8 @@ select:hover {
 .a-last-footer{
   padding-left: 1rem;
 }
-
+.second-nav-toggle{
+  width: 100%;
+  overflow-y: scroll;
+}
 }

@@ -20,8 +20,8 @@
     <header class="header">
       <div class="nav">
         <div class="nav-left">
-          <i class="ri-menu-line"></i>
-          <i class="ri-search-line"></i>
+          <i class="ri-menu-line" id="menu-icon"></i>
+          <i class="ri-search-line" id="search-icon"></i>
         </div>
 
         <div class="nav-middle">
@@ -37,8 +37,8 @@
       </div>
     </header>
 
-    <div class="second-nav">
-      <ul>
+    <div id="second-nav" class="second-nav">
+      <ul class="second-nav-ul">
         <li><a class="second-nav-a" href="">home</a></li>
         <li><a class="second-nav-a" href="">news</a></li>
         <li><a class="second-nav-a" href="">us election</a></li>
@@ -53,6 +53,32 @@
         <li><a class="second-nav-a" href="">live</a></li>
       </ul>
     </div>
+    <!-- secon-nav tambahan jika diklik -->
+    <div id="second-nav-toggle" class="second-nav-toggle">
+      <div id="search-bar" class="search-bar">
+        <input type="text" id="search-input" name="search" placeholder="Search">
+
+      </div>
+      <ul class="ul-toogle-nav">
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">home</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">news</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">us election</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">sport</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">business</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">inovation</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">culture</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">art</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">travel</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">earth</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">video</a></li>
+        <li class="li-toggle-nav"><a class="second-nav-toggle-a" href="">live</a></li>
+      </ul>
+    </div>
+    <!-- jika diklik end -->
+
+    
+
+   
 
     <div class="hero-section">
       <div class="card-left">
@@ -87,7 +113,7 @@
         <div class="card-2-middle">
           <img class="img-middle-card" src="/image/card-img.jpg" alt="image" />
           <h2 class="h2-middle-card">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            Lorem ipsum dolor sit amet adipisicing elit
           </h2>
           <p class="p-middle-card">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -344,5 +370,6 @@
         >
       </div>
     </footer>
+    <script src="my.js/app.js"></script>
   </body>
 </html>
