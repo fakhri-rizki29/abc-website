@@ -190,6 +190,11 @@ input{
   height: auto;
   display: flex;
 }
+.komputerall{
+  text-decoration: none;
+  color: black;
+}
+
 .card-left {
   /* border: 1px solid black; */
   flex: 1;
@@ -253,6 +258,9 @@ input{
   font-weight: 600;
   font-family: "poppins";
   padding: 0.5rem;
+}
+.h2-middle-card:hover{
+  text-decoration: underline;
 }
 .p-middle-card {
   /* border: 1px solid blue; */
@@ -337,6 +345,15 @@ span {
   padding-top: 0.5rem;
   font-weight: 500;
   font-size: 1.8rem;
+  /* line-height: 1; */
+}
+.komodo{
+  text-decoration: none;
+  text-transform: capitalize;
+  padding-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: black;
 }
 .h2-section-2-left {
   margin-bottom: 1rem;
@@ -364,6 +381,10 @@ span {
   height: 100%;
   margin: 4rem auto;
   border-top: 3px solid black;
+}
+.pangrango{
+  text-decoration: none;
+  color: black;
 }
 .section-title {
   text-align: left;
@@ -473,7 +494,7 @@ footer {
 }
 .a-footer-list {
   /* border: 1px solid brown; */
-  /* padding: 0.3rem 1rem; */
+  padding: 0.3rem;
   text-decoration: none;
   color: black;
   font-size: 1rem;
